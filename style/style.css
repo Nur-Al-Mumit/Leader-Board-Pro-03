@@ -7,13 +7,15 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* -------------------------
 ----------Top Section-------
 ----------------------------*/
-.top-container{
+.top-container, .course-container{
+    margin-top: 50px;
     width: 800px;
     border-radius: 5px;
     background-color: #ffffff;
@@ -49,10 +51,12 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
 }
 .blog{
     display: flex;
     align-items: center;
+    padding: 15px;
 }
 
 .blog img{
@@ -61,4 +65,21 @@ main{
 }
 .blog-info{
     margin-left: 15px;
+}
+
+/* Courses */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.course{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.course img{
+    width: 225px;
+    height: 105px;
 }
