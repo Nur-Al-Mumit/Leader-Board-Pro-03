@@ -20,6 +20,7 @@ main{
 }
 .all-players{
     padding: 15px;
+    margin-bottom: 50px;
 }
 .players{
     display: grid;
@@ -37,4 +38,27 @@ main{
 }
 .player h3{
     margin-left: 10px;
+}
+
+/* Top Blogs */
+.blogs-container{
+    margin-top: 50px;
+    padding: 15px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+
+.blog img{
+    width: 180px;
+    height: 120px;
+}
+.blog-info{
+    margin-left: 15px;
 }
